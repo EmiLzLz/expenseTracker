@@ -7,7 +7,7 @@ function Balance() {
   const amounts = transactions.map((transaction) => transaction.amount);
 
   //al acumulador se le suma el item para obtener un total
-  const total = amounts.reduce((acc, item) => (acc += item), 0);
+  const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
   return (
     <div>

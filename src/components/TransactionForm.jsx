@@ -14,7 +14,8 @@ function TransactionForm() {
       description,
       amount: +amount //convert string to number
     });
-    console.log(amount, description);
+    setAmount(0);
+    setDescription("");
   }
 
   return (
@@ -24,12 +25,14 @@ function TransactionForm() {
           type="text"
           placeholder="Add a description"
           onChange={(e) => setDescription(e.target.value)}
+          value={description}
         />
         <input
           type="number"
           step={"0.01"}
           placeholder="0.00"
           onChange={(e) => setAmount(e.target.value)}
+          value={amount}
         />
         <button>Add Transaction</button>
       </form>

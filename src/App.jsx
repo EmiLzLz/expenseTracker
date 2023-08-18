@@ -1,4 +1,5 @@
 import Balance from "./components/Balance";
+import ExpenseChart from "./components/ExpenseChart";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import IncomeExpenses from "./components/IncomeExpenses";
@@ -14,7 +15,9 @@ function App() {
         <IncomeExpenses/>
         <Balance/>
         <TransactionForm/>
+        <ExpenseChart/>
         <TransactionList/>
+
         <Footer/>
       </div>
     </GlobalProvider>

@@ -9,12 +9,14 @@ function IncomeExpenses() {
 
   const income = amounts
   .filter(item => item > 0 )
-  .reduce((acc, item) => (acc += item), 0); //reduce allows join a previous value and a next value
+  .reduce((acc, item) => (acc += item), 0) //reduce allows join a previous value and a next value
+  .toFixed(2);
 
   //negative values
   const expense = amounts
   .filter(item => item < 0)
-  .reduce((acc, item) => (acc += item), 0) * -1;
+  .reduce((acc, item) => (acc += item), 0)
+  .toFixed(2) * -1;
 
   return (
     <>
