@@ -11,8 +11,8 @@ function Balance() {
 
   return (
     <div>
-      <h2>BALANCE</h2>
-      <h4>${total}</h4>
+      <h2 className='text-base md:text-lg lg:text-xl font-medium text-white'>BALANCE</h2>
+      <h4 className="text-base md:text-lg font-bold text-white">${total}</h4>
       
     </div>
   );

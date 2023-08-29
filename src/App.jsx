@@ -11,14 +11,20 @@ function App() {
   return (
     <GlobalProvider>
       <div className="App">
-        <Header/>
-        <IncomeExpenses/>
-        <Balance/>
-        <TransactionForm/>
-        <ExpenseChart/>
-        <TransactionList/>
+        <Header />
+        <div className="app-container flex flex-col items-center justify-between border rounded-lg h-auto p-2 bg-slate-800">
+          <div className="columns-container w-full container grid grid-cols-1 md:grid-cols-2">
+            <div className="container mx-auto">
+              <IncomeExpenses />
+              <Balance />
+              <TransactionForm />
+            </div>
+            <ExpenseChart />
+          </div>
 
-        <Footer/>
+          <TransactionList />
+        </div>
+        <Footer />
       </div>
     </GlobalProvider>
   );

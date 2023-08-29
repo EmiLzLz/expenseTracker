@@ -18,7 +18,8 @@ function ExpenseChart() {
     const totalIncomePercentage = 100 - totalExpensesPercentage;
 
   return (
-    <VictoryPie
+    <div className="chart-container w-full h-full">
+      <VictoryPie
       colorScale={["#e74c13", "#2ecc71"]}
       data={[
         { x: "Expenses", y: totalExpensesPercentage },
@@ -30,6 +31,8 @@ function ExpenseChart() {
       labels={({ datum }) => `${datum.y}%`}
       labelComponent={<VictoryLabel angle={45} style={{ fill: "white" }} />}
     />
+    </div>
+    
   );
 }
 

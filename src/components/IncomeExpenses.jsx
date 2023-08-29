@@ -19,16 +19,16 @@ function IncomeExpenses() {
   .toFixed(2) * -1;
 
   return (
-    <>
+    <div className='income-container container py-4 flex flex-col gap-5'>
       <div>
-        <h3>Income</h3>
-        <h4>{income}</h4>
+        <h3 className='text-base md:text-lg lg:text-xl text-white'>Income</h3>
+        <h4 className="text-base md:text-lg font-semibold text-white">{income}</h4>
       </div>
       <div>
-        <h3>Expense</h3>
-        <h4>{expense}</h4>
+        <h3 className='text-base md:text-lg lg:text-xl text-white'>Expense</h3>
+        <h4 className="text-base md:text-lg font-semibold text-white">{expense}</h4>
       </div>
-    </>
+    </div>
   )
 }
 
