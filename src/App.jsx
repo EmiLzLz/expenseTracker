@@ -10,10 +10,10 @@ import { GlobalProvider } from "./context/GlobalState";
 function App() {
   return (
     <GlobalProvider>
-      <div className="App">
+      <div className="App h-full flex flex-col items-center justify-between">
         <Header />
-        <div className="app-container flex flex-col items-center justify-between border rounded-lg h-auto p-2 bg-slate-800">
-          <div className="columns-container w-full container grid grid-cols-1 md:grid-cols-2">
+        <div className="app-container flex flex-col justify-between border rounded-lg h-auto p-2 bg-slate-800">
+          <div className="columns w-full container grid grid-cols-1 md:grid-cols-2">
             <div className="container mx-auto">
               <IncomeExpenses />
               <Balance />

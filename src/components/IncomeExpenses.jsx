@@ -21,12 +21,12 @@ function IncomeExpenses() {
   return (
     <div className='income-container container py-4 flex flex-col gap-5'>
       <div>
-        <h3 className='text-base md:text-lg lg:text-xl text-white'>Income</h3>
-        <h4 className="text-base md:text-lg font-semibold text-white">{income}</h4>
+        <h3 className='text-base text-center md:text-left md:text-lg lg:text-xl text-white'>Income</h3>
+        <h4 className="text-base text-center md:text-left md:text-lg font-semibold text-white">{income}</h4>
       </div>
       <div>
-        <h3 className='text-base md:text-lg lg:text-xl text-white'>Expense</h3>
-        <h4 className="text-base md:text-lg font-semibold text-white">{expense}</h4>
+        <h3 className='text-base text-center md:text-left md:text-lg lg:text-xl text-white'>Expense</h3>
+        <h4 className="text-base text-center md:text-left md:text-lg font-semibold text-white">{expense}</h4>
       </div>
     </div>
   )

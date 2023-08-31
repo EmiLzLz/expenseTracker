@@ -2,19 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-.App{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-    justify-items: center;
+.App {
+  min-height: 100vh;
 }
 
-.app-container{
-    width: 80%;
+.app-container {
+  width: 80%;
+  background: rgb(97, 0, 193);
+  background: linear-gradient(
+    240deg,
+    rgba(97, 0, 193, 1) 0%,
+    rgba(22, 14, 175, 1) 49%,
+    rgba(0, 111, 133, 1) 100%
+  );
 }
 
-#root{
-    background-color: black;
+#root {
+  background-color: black;
 }
 
-ul, li{ list-style: none;}
+@media screen and (max-width: 790px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .balance {
+    text-align: center;
+  }
+
+  .form {
+    align-items: center;
+  }
+
+  .form button {
+    width: 40%;
+  }
+
+  .form input {
+    width: 90%;
+  }
+
+  .income-container {
+    align-items: center;
+  }
+}
